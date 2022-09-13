@@ -1,0 +1,103 @@
+/* INDEX BIENVENIDA */
+
+.indexBienvenida {
+    text-align: left;
+    border: 3px black solid;
+    background-color: rgba(195, 225, 235, 0.6);
+    /* padding: 0 10px; */
+    /* grid-area: 1 / 1 / 2 / 2; */
+
+    h1 {
+        font-size: 3em;
+        text-decoration: underline;
+        margin: 0;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 2.8rem;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 3rem;
+        text-decoration: underline;
+        margin: 0;
+        margin: 10px;
+    }
+}
+
+
+/* INDEX DATOS */
+
+.indexDatos {
+    border: solid black 3px;
+    text-align: center;
+    background-color: rgba(195, 225, 235, 0.6);
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+.container-fluid div:nth-child(2) {
+    align-self: center;
+}
+
+
+/* INDEX SERVICIOS */
+
+.indexServicios {
+    h2 {
+        text-align: center;
+        font-size: 5rem;
+        margin: 1px;
+    }
+
+    div {
+        border: 3px black solid;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+        background-color: rgba(195, 225, 235, 0.6);
+        padding: 30px;
+        /* width: 100%; */
+
+        article {
+
+            h3 {
+                margin: 10px;
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+
+/* INDEX SITIOS */
+
+.indexSitios {
+    text-align: center;
+
+    h2 {
+        font-size: 5rem;
+        margin: 1px;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 3px black solid;
+        background-color: rgba(195, 225, 235, 0.6);
+        padding: 20px 10px;
+        /* gap: 12px; */
+    }
+}
+

@@ -1,0 +1,21 @@
+footer div section a:nth-child(4) img {
+    width: 52px;
+}
+
+footer div section a:nth-child(5) img {
+    width: 51px;
+}
+
+
+footer div section a img:hover{
+    filter: blur(1px);
+    animation: icon-animate 0.2s ease-out forwards;
+}
+
+
+@keyframes icon-animate{
+    0%{transform: rotate(90deg);}
+    25%{transform: rotate(180deg);}
+    50%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}

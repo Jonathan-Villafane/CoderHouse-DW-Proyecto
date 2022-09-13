@@ -1,0 +1,68 @@
+#navBar {
+    /* background-color: rgba(189, 33, 33, 0.2); */
+    background-color: rgba(195, 225, 235, 0.6);
+
+    a {
+        font-size: 3rem;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    li {
+
+        ul {
+            /* background-color: rgba(195, 225, 235, 0.6); */
+            background-color: rgba(195, 225, 235, 0.6);
+        }
+    }
+
+}
+
+/* animación version principal */
+#navBar li :hover{
+    animation: menu-animacion 0.3s ease-out forwards;
+}
+
+
+/* animación version secundaria */
+// #navBar {
+
+//     li {
+        
+//         &:hover {
+//             animation: menu-animacion 0.3s ease-out forwards;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+
+
+@keyframes menu-animacion{
+    0%{}
+    100%{border-radius: 15px;
+        background-color: white;
+        padding: 6px;
+    }
+}
+
+
+.navbar-toggler-icon {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* imagen del header */
+
+.contactoImagen{
+    width: 100%;
+}

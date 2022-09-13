@@ -1,344 +1,398 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mukta:wght@300&display=swap');
-
-*::before
-*::after
-
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mukta:wght@300&display=swap");
+*::before *::after * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 a {
-    text-decoration: none;  
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-
-
-
-
-
-/* elementos del HEADER / NAV */
-
-#navBar{
-    /* background-color: rgba(189, 33, 33, 0.2); */
-    background-color: rgba(195, 225, 235, 0.6);
-
+body {
+  background-size: auto;
+  /* background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138)); */
+  -webkit-animation: bg-animate 3s ease-in-out infinite;
+          animation: bg-animate 3s ease-in-out infinite;
 }
 
+@-webkit-keyframes bg-animate {
+  0% {
+    background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+  50% {
+    background: linear-gradient(90deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+  100% {
+    background: linear-gradient(135deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+}
 
+@keyframes bg-animate {
+  0% {
+    background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+  50% {
+    background: linear-gradient(90deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+  100% {
+    background: linear-gradient(135deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
+  }
+}
+#navBar {
+  /* background-color: rgba(189, 33, 33, 0.2); */
+  background-color: rgba(195, 225, 235, 0.6);
+}
 #navBar a {
-    font-size: 3rem;
-    color: black;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 10px;
+  font-size: 3rem;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+#navBar li ul {
+  /* background-color: rgba(195, 225, 235, 0.6); */
+  background-color: rgba(195, 225, 235, 0.6);
 }
 
-
-#navBar li :hover{
-    animation: menu-animacion 0.3s ease-out forwards;
+/* animación version principal */
+#navBar li :hover {
+  -webkit-animation: menu-animacion 0.3s ease-out forwards;
+          animation: menu-animacion 0.3s ease-out forwards;
 }
 
-
-#navBar li ul{
-    /* background-color: rgba(195, 225, 235, 0.6); */
+/* animación version secundaria */
+@-webkit-keyframes menu-animacion {
+  100% {
+    border-radius: 15px;
     background-color: white;
+    padding: 6px;
+  }
 }
-
+@keyframes menu-animacion {
+  100% {
+    border-radius: 15px;
+    background-color: white;
+    padding: 6px;
+  }
+}
 .navbar-toggler-icon {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
-
-@keyframes menu-animacion{
-    0%{}
-    100%{border-radius: 15px;
-        background-color: white;
-        padding: 6px;
-    }
+/* imagen del header */
+.contactoImagen {
+  width: 100%;
 }
-
-
-
-.contactoImagen{
-    width: 100%;
-}
-
-
-
-
-
-
-/* elementos de la página INDEX */
-
 
 /* INDEX BIENVENIDA */
-
 .indexBienvenida {
-    text-align: left;
-    border: 3px black solid;
-    /* padding: 0 10px; */
-    background-color: rgba(195, 225, 235, 0.6);
-    grid-area: 1 / 1 / 2 / 2;
+  text-align: left;
+  border: 3px black solid;
+  background-color: rgba(195, 225, 235, 0.6);
+  /* padding: 0 10px; */
+  /* grid-area: 1 / 1 / 2 / 2; */
 }
-
-.indexBienvenida h1{
-    font-size: 3em;
-    text-decoration: underline;
-    margin: 0;
-    margin: 10px;
-
+.indexBienvenida h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  margin: 0;
+  margin: 10px;
 }
-
-
-.indexBienvenida p{
-    font-size: 2.8rem;
-    margin: 10px;
+.indexBienvenida p {
+  font-size: 2.8rem;
+  margin: 10px;
 }
-
-.indexBienvenida h2{
-    font-size: 3rem;
-    text-decoration: underline;
-    margin: 0;
-    margin: 10px;
-
+.indexBienvenida h2 {
+  font-size: 3rem;
+  text-decoration: underline;
+  margin: 0;
+  margin: 10px;
 }
-
-
-
-
 
 /* INDEX DATOS */
-
 .indexDatos {
-    border: solid black 3px;
-    text-align: center;
-    background-color: rgba(195, 225, 235, 0.6);
+  border: solid black 3px;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
 }
-
 .indexDatos h2 {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
-
 .indexDatos h3 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-
-.container-fluid div:nth-child(2){
-    align-self: center;
+.container-fluid div:nth-child(2) {
+  align-self: center;
 }
-
-
-
-
 
 /* INDEX SERVICIOS */
-
-.indexServicios div{
-    border: 3px black solid;
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    gap: 50px;
-    background-color: rgba(195, 225, 235, 0.6);
-    padding: 30px;
+.indexServicios h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1px;
 }
-.indexServicios h2{
-    text-align: center;
-    font-size: 5rem;
-    margin: 1px;
+.indexServicios div {
+  border: 3px black solid;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgba(195, 225, 235, 0.6);
+  padding: 30px;
+  /* width: 100%; */
 }
-
-.indexServicios div article h3{
-    margin: 10px;
-    font-size: 4rem;
+.indexServicios div article h3 {
+  margin: 10px;
+  font-size: 4rem;
 }
-
-
-body{
-    background-size: auto;
-    /* background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138)); */
-    animation: bg-animate 3s ease-in-out infinite;
-}
-
-@keyframes bg-animate{
-    0%{background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138));}
-    50%{background: linear-gradient(90deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138));}
-    100%{background: linear-gradient(135deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138));}
-}
-
-
-
-
 
 /* INDEX SITIOS */
-
 .indexSitios {
-    text-align: center
+  text-align: center;
 }
-
-
-.indexSitios h2{
-    font-size: 5rem;
-    margin: 1px;
+.indexSitios h2 {
+  font-size: 5rem;
+  margin: 1px;
 }
-
 .indexSitios div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 3px black solid;
-    background-color: rgba(195, 225, 235, 0.6);
-    /* gap: 12px; */
-    padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 3px black solid;
+  background-color: rgba(195, 225, 235, 0.6);
+  padding: 20px 10px;
+  /* gap: 12px; */
 }
-
-
-/* elementos de la página CONTACTO */
-
 
 /* CONTACTO DATOS */
-
 .contactoDatos {
-    border: 3px black solid;
-    text-align: center;
-    background-color: rgba(195, 225, 235, 0.6);
+  border: 3px black solid;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
 }
-
-    .contactoDatos h1{
-        font-size: 4rem;
-        margin: 0;
-    }
-
-    .contactoDatos h2{
-        font-size: 3rem;
-        margin: 0;
-    }
-
-
-
-
+.contactoDatos h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+.contactoDatos h2 {
+  font-size: 3rem;
+  margin: 0;
+}
 
 /* CONTACTO FORMULARIO */
-
-#contactoFormulario h1 {
-    font-size: 4rem;
+.contactoFormulario h1 {
+  font-size: 5rem;
 }
-
 .contactoFormulario label {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
-
-
-
-
-/* elementos de SITIOS DE INTERÉS */
+/* CONTACTO MAPA */
+.contactoMapa {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.contactoMapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 
 /* SITIOS DE INTERES MAIN */
-
-
-#sitiosMain div h1 {
-    font-size: 5rem;
-    text-align: center;
+.sitiosMain div h1 {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
+  border-radius: 20px;
 }
 
-#sitiosMainColumna article {
-    padding: 10px;
+.sitiosMainColumna article {
+  padding: 20px;
 }
-
-
-
-
-
-/* elementos de NOSOTROS */
+.sitiosMainColumna a img {
+  width: 100%;
+}
 
 /* NOSOTROS TEXTO */
-
-
-#nosotrosTexto{
-    text-align: left;
-    width: 100%;
-    margin-left: 5px;
-    margin-top: 2px;
-    padding: 10px 20px;
-    border: solid black 3px;
-    background-color: rgba(195, 225, 235, 0.6);
+.nosotrosTitulo div h1 {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
+  border-radius: 20px;
 }
 
-
-    #nosotrosTexto  section p{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2.8rem;
-        line-height: 2.3rem;
-    }
-
-
-    #nosotrosTexto section h1 {
-        font-size: 5rem;
-        text-align: center;
-        text-decoration: underline;
-    }
-
-
-    #nosotrosTexto  section h2{
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: underline;
-        font-size: 4rem;
-    }
-
-
-
-
-
-/* NOSOTROS VALORES */
-
-
+.nosotrosTexto {
+  text-align: left;
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px 20px;
+  border: solid black 3px;
+  background-color: rgba(195, 225, 235, 0.6);
+}
+.nosotrosTexto section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  line-height: 2.3rem;
+}
+.nosotrosTexto section h1 {
+  font-size: 5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.nosotrosTexto section h2 {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-size: 4rem;
+}
+.nosotrosTexto section ul li {
+  font-size: 3rem;
+}
 
 /* NOSOTROS PERFIL */
+.nosotrosPerfil {
+  background-color: rgba(195, 225, 235, 0.6);
+  padding-bottom: 5rem;
+}
+.nosotrosPerfil h2 {
+  text-align: center;
+  font-size: 5rem;
+}
 
+.nosotrosCard div {
+  width: 40rem;
+}
+.nosotrosCard div img {
+  width: 100%;
+}
+.nosotrosCard div div h5 {
+  font-size: 4rem;
+}
+.nosotrosCard div div p {
+  font-size: 2.5rem;
+}
+.nosotrosCard div ul li {
+  font-size: 3rem;
+}
+.nosotrosCard div div a {
+  font-size: 3rem;
+}
 
+.servicioTitulo div h1 {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
+  border-radius: 20px;
+}
 
+.servicioNav {
+  background-color: rgba(195, 225, 235, 0.6);
+}
+.servicioNav li a {
+  font-size: 3rem;
+}
 
+.servicioTexto {
+  text-align: center;
+  border: 3px black solid;
+  background-color: rgba(195, 225, 235, 0.6);
+}
+.servicioTexto h1 {
+  font-size: 3em;
+  text-decoration: underline;
+  margin: 0;
+  margin: 10px;
+}
+.servicioTexto p {
+  font-size: 2.8rem;
+  margin: 10px;
+}
+.servicioTexto h2 {
+  font-size: 3rem;
+  text-decoration: underline;
+  margin: 0;
+  margin: 10px;
+}
 
-
-
-
-/* Elementos del FOOTER */
+.servicioTramite h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1px;
+}
+.servicioTramite div {
+  border: 3px black solid;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgba(195, 225, 235, 0.6);
+  padding: 30px;
+  /* width: 100%; */
+}
+.servicioTramite div ul {
+  list-style: circle;
+}
+.servicioTramite div ul li {
+  font-size: 3rem;
+}
 
 footer div section a:nth-child(4) img {
-    width: 52px;
+  width: 52px;
 }
 
 footer div section a:nth-child(5) img {
-    width: 51px;
+  width: 51px;
 }
 
-
-footer div section a img:hover{
-    filter: blur(1px);
-    animation: icon-animate 0.2s ease-out forwards;
+footer div section a img:hover {
+  filter: blur(1px);
+  -webkit-animation: icon-animate 0.2s ease-out forwards;
+          animation: icon-animate 0.2s ease-out forwards;
 }
 
-
-@keyframes icon-animate{
-    0%{transform: rotate(90deg);}
-    25%{transform: rotate(180deg);}
-    50%{transform: rotate(270deg);}
-    100%{transform: rotate(360deg);}
+@-webkit-keyframes icon-animate {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+@keyframes icon-animate {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
