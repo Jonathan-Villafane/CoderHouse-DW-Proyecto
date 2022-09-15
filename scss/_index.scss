@@ -3,27 +3,27 @@
 .indexBienvenida {
     text-align: left;
     border: 3px black solid;
-    background-color: rgba(195, 225, 235, 0.6);
+    background-color: $color-main;
     /* padding: 0 10px; */
     /* grid-area: 1 / 1 / 2 / 2; */
 
     h1 {
-        font-size: 3em;
+        font-size: $text-3;
         text-decoration: underline;
         margin: 0;
-        margin: 10px;
+        margin: $margin-10;
     }
 
     p {
         font-size: 2.8rem;
-        margin: 10px;
+        margin: $margin-10;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: $text-3;
         text-decoration: underline;
         margin: 0;
-        margin: 10px;
+        margin: $margin-10;
     }
 }
 
@@ -32,20 +32,20 @@
 
 .indexDatos {
     border: solid black 3px;
-    text-align: center;
-    background-color: rgba(195, 225, 235, 0.6);
+    text-align: $space-center;
+    background-color: $color-main;
 
     h2 {
         font-size: 3.5rem;
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: $text-3;
     }
 }
 
 .container-fluid div:nth-child(2) {
-    align-self: center;
+    align-self: $space-center;
 }
 
 
@@ -53,8 +53,8 @@
 
 .indexServicios {
     h2 {
-        text-align: center;
-        font-size: 5rem;
+        text-align: $space-center;
+        font-size: $text-5;
         margin: 1px;
     }
 
@@ -62,18 +62,18 @@
         border: 3px black solid;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
+        text-align: $space-center;
+        justify-content: $space-center;
         gap: 50px;
-        background-color: rgba(195, 225, 235, 0.6);
+        background-color: $color-main;
         padding: 30px;
         /* width: 100%; */
 
         article {
 
             h3 {
-                margin: 10px;
-                font-size: 4rem;
+                margin: $margin-10;
+                font-size: $text-4;
             }
         }
     }
@@ -83,10 +83,10 @@
 /* INDEX SITIOS */
 
 .indexSitios {
-    text-align: center;
+    text-align: $space-center;
 
     h2 {
-        font-size: 5rem;
+        font-size: $text-5;
         margin: 1px;
     }
 
@@ -95,7 +95,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         border: 3px black solid;
-        background-color: rgba(195, 225, 235, 0.6);
+        background-color: $color-main;
         padding: 20px 10px;
         /* gap: 12px; */
     }

@@ -2,16 +2,16 @@
 
 .contactoDatos {
     border: 3px black solid;
-    text-align: center;
-    background-color: rgba(195, 225, 235, 0.6);
+    text-align: $space-center;
+    background-color: $color-main;
 
     h1 {
-        font-size: 4rem;
+        font-size: $text-4;
         margin: 0;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: $text-3;
         margin: 0;
     }
 }
@@ -22,11 +22,11 @@
 .contactoFormulario {
 
     h1 {
-        font-size: 5rem;
+        font-size: $text-5;
     }
 
     label {
-        font-size: 4rem;
+        font-size: $text-4;
     }
 }
 

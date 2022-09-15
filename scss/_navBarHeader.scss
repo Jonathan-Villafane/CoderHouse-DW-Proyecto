@@ -1,9 +1,9 @@
 #navBar {
     /* background-color: rgba(189, 33, 33, 0.2); */
-    background-color: rgba(195, 225, 235, 0.6);
+    background-color: $color-main;
 
     a {
-        font-size: 3rem;
+        font-size: $text-3;
         color: black;
         border: 1px solid black;
         padding: 10px;
@@ -14,7 +14,7 @@
 
         ul {
             /* background-color: rgba(195, 225, 235, 0.6); */
-            background-color: rgba(195, 225, 235, 0.6);
+            background-color: $color-main;
         }
     }
 
@@ -55,8 +55,8 @@
 
 
 .navbar-toggler-icon {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 80px;
 }
 
 

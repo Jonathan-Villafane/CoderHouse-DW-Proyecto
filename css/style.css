@@ -86,8 +86,8 @@ body {
   }
 }
 .navbar-toggler-icon {
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 80px;
 }
 
 /* imagen del header */
@@ -104,7 +104,7 @@ body {
   /* grid-area: 1 / 1 / 2 / 2; */
 }
 .indexBienvenida h1 {
-  font-size: 3em;
+  font-size: 3rem;
   text-decoration: underline;
   margin: 0;
   margin: 10px;
@@ -314,7 +314,7 @@ body {
   background-color: rgba(195, 225, 235, 0.6);
 }
 .servicioTexto h1 {
-  font-size: 3em;
+  font-size: 3rem;
   text-decoration: underline;
   margin: 0;
   margin: 10px;

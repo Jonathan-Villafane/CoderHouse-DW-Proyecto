@@ -5,9 +5,9 @@
     div {
 
         h1 {
-            font-size: 6rem;
-            text-align: center;
-            background-color: rgba(195, 225, 235, 0.6);
+            font-size: $text-6;
+            text-align: $space-center;
+            background-color: $color-main;
             border-radius: 20px;
         }
     }

@@ -3,9 +3,9 @@
     div {
 
         h1 {
-            font-size: 6rem;
-            text-align: center;
-            background-color: rgba(195, 225, 235, 0.6);
+            font-size: $text-6;
+            text-align: $space-center;
+            background-color: $color-main;
             border-radius: 20px;
         }
     }
@@ -13,46 +13,46 @@
 
 
 .servicioNav {
-    background-color: rgba(195, 225, 235, 0.6);
+    background-color: $color-main;
 
     li {
 
         a{
-            font-size: 3rem;
+            font-size: $text-3;
         }
     }
 }
 
 .servicioTexto {
-    text-align: center;
+    text-align: $space-center;
     border: 3px black solid;
-    background-color: rgba(195, 225, 235, 0.6);
+    background-color: $color-main;
 
     h1 {
-        font-size: 3em;
+        font-size: $text-3;
         text-decoration: underline;
         margin: 0;
-        margin: 10px;
+        margin: $margin-10;
     }
 
     p {
         font-size: 2.8rem;
-        margin: 10px;
+        margin: $margin-10;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: $text-3;
         text-decoration: underline;
         margin: 0;
-        margin: 10px;
+        margin: $margin-10;
     }
 }
 
 .servicioTramite {
     
     h2 {
-        text-align: center;
-        font-size: 5rem;
+        text-align: $space-center;
+        font-size: $text-5;
         margin: 1px;
     }
 
@@ -60,10 +60,10 @@
         border: 3px black solid;
         display: flex;
         flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
+        text-align: $space-center;
+        justify-content: $space-center;
         gap: 50px;
-        background-color: rgba(195, 225, 235, 0.6);
+        background-color: $color-main;
         padding: 30px;
         /* width: 100%; */
 
@@ -71,7 +71,7 @@
             list-style: circle;
 
             li {
-                font-size: 3rem;
+                font-size: $text-3;
             }
         }
     }
