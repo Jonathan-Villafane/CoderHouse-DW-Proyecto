@@ -1,19 +1,20 @@
+/* SERVICIOS TITULO */
+
 .servicioTitulo {
 
     div {
 
         h1 {
-            font-size: $text-6;
-            text-align: $space-center;
-            background-color: $color-main;
-            border-radius: 20px;
+            @include title-h1
         }
     }
 }
 
 
+
 .servicioNav {
     background-color: $color-main;
+    margin-top: 35px;
 
     li {
 
@@ -23,49 +24,44 @@
     }
 }
 
+
+/* SERVICIOS TEXTO */
+
 .servicioTexto {
-    text-align: $space-center;
-    border: 3px black solid;
-    background-color: $color-main;
+    @include textBox ('c');
+    
 
     h1 {
-        font-size: $text-3;
+        @include textBoxMar ('3');
         text-decoration: underline;
-        margin: 0;
-        margin: $margin-10;
+        
     }
 
     p {
-        font-size: 2.8rem;
-        margin: $margin-10;
+        @include textBoxMar ('2.5');
     }
 
     h2 {
-        font-size: $text-3;
+        @include textBoxMar ('3');
         text-decoration: underline;
-        margin: 0;
-        margin: $margin-10;
     }
 }
+
+
+/* SERVICIOS TRAMITE */
 
 .servicioTramite {
     
     h2 {
-        text-align: $space-center;
-        font-size: $text-5;
+        @include textBoxFont ('c', '5');
         margin: 1px;
     }
 
     div {
-        border: 3px black solid;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: $space-center;
-        justify-content: $space-center;
+        @include textBox ('c');
+        @include flex (center);
         gap: 50px;
-        background-color: $color-main;
         padding: 30px;
-        /* width: 100%; */
 
         ul {
             list-style: circle;

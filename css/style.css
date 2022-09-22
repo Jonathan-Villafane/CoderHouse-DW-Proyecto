@@ -48,6 +48,11 @@ body {
     background: linear-gradient(135deg, rgb(107, 106, 106), rgb(181, 173, 186), rgb(177, 138, 138));
   }
 }
+.box-gral, .servicioTramite div, .servicioTexto, .nosotrosTexto, .contactoDatos, .indexSitios div, .indexServicios div, .indexDatos, .indexTexto {
+  background-color: rgba(195, 225, 235, 0.6);
+  border: 3px solid black;
+}
+
 #navBar {
   /* background-color: rgba(189, 33, 33, 0.2); */
   background-color: rgba(195, 225, 235, 0.6);
@@ -95,39 +100,34 @@ body {
   width: 100%;
 }
 
-/* INDEX BIENVENIDA */
-.indexBienvenida {
-  text-align: left;
-  border: 3px black solid;
+/* INDEX TITULO */
+.indexTitulo h1 {
+  font-size: 6rem;
+  text-align: center;
   background-color: rgba(195, 225, 235, 0.6);
-  /* padding: 0 10px; */
-  /* grid-area: 1 / 1 / 2 / 2; */
+  border-radius: 20px;
 }
-.indexBienvenida h1 {
+
+/* INDEX TEXTO */
+.indexTexto {
+  text-align: left;
+}
+.indexTexto p {
+  font-size: 2.5rem;
+  margin: 10px;
+}
+.indexTexto h2 {
   font-size: 3rem;
+  margin: 10px;
   text-decoration: underline;
-  margin: 0;
-  margin: 10px;
-}
-.indexBienvenida p {
-  font-size: 2.8rem;
-  margin: 10px;
-}
-.indexBienvenida h2 {
-  font-size: 3rem;
-  text-decoration: underline;
-  margin: 0;
-  margin: 10px;
 }
 
 /* INDEX DATOS */
 .indexDatos {
-  border: solid black 3px;
   text-align: center;
-  background-color: rgba(195, 225, 235, 0.6);
 }
 .indexDatos h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
 }
 .indexDatos h3 {
   font-size: 3rem;
@@ -144,26 +144,21 @@ body {
   margin: 1px;
 }
 .indexServicios div {
-  border: 3px black solid;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: center;
   gap: 50px;
-  background-color: rgba(195, 225, 235, 0.6);
   padding: 30px;
-  /* width: 100%; */
 }
 .indexServicios div article h3 {
-  margin: 10px;
   font-size: 4rem;
+  margin: 10px;
 }
 
 /* INDEX SITIOS */
-.indexSitios {
-  text-align: center;
-}
 .indexSitios h2 {
+  text-align: center;
   font-size: 5rem;
   margin: 1px;
 }
@@ -171,29 +166,33 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 3px black solid;
-  background-color: rgba(195, 225, 235, 0.6);
   padding: 20px 10px;
-  /* gap: 12px; */
+  gap: 5px;
+}
+
+/* CONTACTO TITULO */
+.contactoTitulo h1 {
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(195, 225, 235, 0.6);
+  border-radius: 20px;
 }
 
 /* CONTACTO DATOS */
 .contactoDatos {
-  border: 3px black solid;
   text-align: center;
-  background-color: rgba(195, 225, 235, 0.6);
-}
-.contactoDatos h1 {
-  font-size: 4rem;
-  margin: 0;
 }
 .contactoDatos h2 {
+  font-size: 4rem;
+  margin: 10px;
+}
+.contactoDatos h3 {
   font-size: 3rem;
-  margin: 0;
+  margin: 10px;
 }
 
 /* CONTACTO FORMULARIO */
-.contactoFormulario h1 {
+.contactoFormulario h2 {
   font-size: 5rem;
 }
 .contactoFormulario label {
@@ -230,7 +229,7 @@ body {
   width: 100%;
 }
 
-/* NOSOTROS TEXTO */
+/* NOSOTROS TITULO */
 .nosotrosTitulo div h1 {
   font-size: 6rem;
   text-align: center;
@@ -238,23 +237,17 @@ body {
   border-radius: 20px;
 }
 
+/* NOSOTROS TEXTO */
 .nosotrosTexto {
   text-align: left;
   width: 100%;
   margin-top: 2px;
   padding: 10px 20px;
-  border: solid black 3px;
-  background-color: rgba(195, 225, 235, 0.6);
 }
 .nosotrosTexto section p {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 2.3rem;
-}
-.nosotrosTexto section h1 {
-  font-size: 5rem;
-  text-align: center;
-  text-decoration: underline;
 }
 .nosotrosTexto section h2 {
   font-family: "Montserrat", sans-serif;
@@ -294,6 +287,7 @@ body {
   font-size: 3rem;
 }
 
+/* SERVICIOS TITULO */
 .servicioTitulo div h1 {
   font-size: 6rem;
   text-align: center;
@@ -303,48 +297,44 @@ body {
 
 .servicioNav {
   background-color: rgba(195, 225, 235, 0.6);
+  margin-top: 35px;
 }
 .servicioNav li a {
   font-size: 3rem;
 }
 
+/* SERVICIOS TEXTO */
 .servicioTexto {
   text-align: center;
-  border: 3px black solid;
-  background-color: rgba(195, 225, 235, 0.6);
 }
 .servicioTexto h1 {
   font-size: 3rem;
-  text-decoration: underline;
-  margin: 0;
   margin: 10px;
+  text-decoration: underline;
 }
 .servicioTexto p {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   margin: 10px;
 }
 .servicioTexto h2 {
   font-size: 3rem;
-  text-decoration: underline;
-  margin: 0;
   margin: 10px;
+  text-decoration: underline;
 }
 
+/* SERVICIOS TRAMITE */
 .servicioTramite h2 {
   text-align: center;
   font-size: 5rem;
   margin: 1px;
 }
 .servicioTramite div {
-  border: 3px black solid;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   justify-content: center;
   gap: 50px;
-  background-color: rgba(195, 225, 235, 0.6);
   padding: 30px;
-  /* width: 100%; */
 }
 .servicioTramite div ul {
   list-style: circle;

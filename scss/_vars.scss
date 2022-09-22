@@ -17,7 +17,71 @@ $text-6: 6rem;
 // variables de espaciado
 
 $space-center: center;
+$space-left: left;
 
 $margin-10: 10px;
 
 
+
+// mapas
+
+// mapa de size de font
+$textSize:(
+    '2.5': 2.5rem,
+    '3': 3rem,
+    '4': 4rem,
+    '5': 5rem,
+    '6': 6rem,
+);
+
+// mapa de align de texto
+$textPos:(
+    'l': left,
+    'c': center,
+    'r': right,
+);
+
+
+
+// clase base
+
+.box-gral {
+    background-color: $color-main;
+    border: 3px solid black;
+}
+
+
+// mixin //
+
+// uso tipo clase pero sin tener que el html
+@mixin title-h1 {
+    font-size: map-get($map: $textSize, $key: '6');
+    text-align: $space-center;
+    background-color: $color-main;
+    border-radius: 20px;
+}
+
+//  extend de la caja basica pero con align-text
+@mixin textBox ($align){
+    @extend .box-gral;
+    text-align: map-get($map: $textPos, $key: $align);
+}
+
+// mixin de pos y size (l, c, r ; 3-6)
+@mixin textBoxFont ($align, $size){
+    text-align: map-get($map: $textPos, $key: $align);
+    font-size: map-get($map: $textSize, $key: $size);
+}
+
+// mixin de tamaño (3-6) pero con margin establecido
+@mixin textBoxMar ($size){
+    font-size: map-get($map: $textSize, $key: $size);
+    margin: $margin-10;
+}
+
+// flex para elegir el justify
+@mixin flex ($just) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $just;
+}

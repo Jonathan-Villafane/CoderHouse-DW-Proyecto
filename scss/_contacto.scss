@@ -1,18 +1,24 @@
+/* CONTACTO TITULO */
+
+.contactoTitulo {
+
+    h1 {
+        @include title-h1
+    }
+}
+
+
 /* CONTACTO DATOS */
 
 .contactoDatos {
-    border: 3px black solid;
-    text-align: $space-center;
-    background-color: $color-main;
-
-    h1 {
-        font-size: $text-4;
-        margin: 0;
-    }
+    @include textBox ('c');
 
     h2 {
-        font-size: $text-3;
-        margin: 0;
+        @include textBoxMar ('4');
+    }
+
+    h3 {
+        @include textBoxMar ('3');
     }
 }
 
@@ -21,7 +27,7 @@
 
 .contactoFormulario {
 
-    h1 {
+    h2 {
         font-size: $text-5;
     }
 

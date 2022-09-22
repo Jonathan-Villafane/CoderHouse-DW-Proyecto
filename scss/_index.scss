@@ -1,29 +1,25 @@
-/* INDEX BIENVENIDA */
+/* INDEX TITULO */
 
-.indexBienvenida {
-    text-align: left;
-    border: 3px black solid;
-    background-color: $color-main;
-    /* padding: 0 10px; */
-    /* grid-area: 1 / 1 / 2 / 2; */
+.indexTitulo {
 
     h1 {
-        font-size: $text-3;
-        text-decoration: underline;
-        margin: 0;
-        margin: $margin-10;
+        @include title-h1
     }
+}
 
+
+/* INDEX TEXTO */
+
+.indexTexto {
+    @include textBox ('l');
+    
     p {
-        font-size: 2.8rem;
-        margin: $margin-10;
+        @include textBoxMar ('2.5');
     }
 
     h2 {
-        font-size: $text-3;
+        @include textBoxMar ('3');
         text-decoration: underline;
-        margin: 0;
-        margin: $margin-10;
     }
 }
 
@@ -31,12 +27,10 @@
 /* INDEX DATOS */
 
 .indexDatos {
-    border: solid black 3px;
-    text-align: $space-center;
-    background-color: $color-main;
+    @include textBox ('c');
 
     h2 {
-        font-size: 3.5rem;
+        font-size: $text-4;
     }
 
     h3 {
@@ -53,27 +47,20 @@
 
 .indexServicios {
     h2 {
-        text-align: $space-center;
-        font-size: $text-5;
+        @include textBoxFont ('c', '5');
         margin: 1px;
     }
 
     div {
-        border: 3px black solid;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: $space-center;
-        justify-content: $space-center;
+        @include textBox ('c');
+        @include flex (center);
         gap: 50px;
-        background-color: $color-main;
         padding: 30px;
-        /* width: 100%; */
 
         article {
 
             h3 {
-                margin: $margin-10;
-                font-size: $text-4;
+                @include textBoxMar ('4');
             }
         }
     }
@@ -83,21 +70,19 @@
 /* INDEX SITIOS */
 
 .indexSitios {
-    text-align: $space-center;
+    
 
     h2 {
-        font-size: $text-5;
+        @include textBoxFont ('c', '5');
         margin: 1px;
     }
 
     div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        border: 3px black solid;
-        background-color: $color-main;
+        @extend .box-gral;
+        @include flex (space-around);
         padding: 20px 10px;
-        /* gap: 12px; */
+        gap: 5px;
+
     }
 }
 

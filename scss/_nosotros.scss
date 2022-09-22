@@ -1,38 +1,30 @@
-/* NOSOTROS TEXTO */
+/* NOSOTROS TITULO */
 
 .nosotrosTitulo {
 
     div {
 
         h1 {
-            font-size: $text-6;
-            text-align: $space-center;
-            background-color: $color-main;
-            border-radius: 20px;
+            @include title-h1
         }
     }
 }
 
+
+/* NOSOTROS TEXTO */
+
 .nosotrosTexto {
-    text-align: left;
+    @include textBox ('l');
     width: 100%;
     margin-top: 2px;
     padding: 10px 20px;
-    border: solid black 3px;
-    background-color: $color-main;
 
     section {
 
         p {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
+            font-size: $text-3;
             line-height: 2.3rem;
-        }
-
-        h1 {
-            font-size: $text-5;
-            text-align: $space-center;
-            text-decoration: underline;
         }
 
         h2 {
@@ -58,8 +50,7 @@
     padding-bottom: $text-5;
 
     h2 {
-        text-align: $space-center;
-        font-size: $text-5;
+        @include textBoxFont ('c', '5');
     }
 }
 
