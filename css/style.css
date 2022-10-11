@@ -20,7 +20,6 @@ ul {
 
 body {
   background-size: auto;
-  /* background: linear-gradient(45deg, rgb(107, 106, 106), rgb(181, 173, 186),rgb(177, 138, 138)); */
   -webkit-animation: bg-animate 3s ease-in-out infinite;
           animation: bg-animate 3s ease-in-out infinite;
 }
@@ -54,8 +53,12 @@ body {
 }
 
 #navBar {
-  /* background-color: rgba(189, 33, 33, 0.2); */
   background-color: rgba(195, 225, 235, 0.6);
+}
+@media screen and (max-width: 991px) {
+  #navBar {
+    background-color: rgba(173, 216, 230, 0.8);
+  }
 }
 #navBar a {
   font-size: 3rem;
@@ -65,7 +68,6 @@ body {
   border-radius: 10px;
 }
 #navBar li ul {
-  /* background-color: rgba(195, 225, 235, 0.6); */
   background-color: rgba(195, 225, 235, 0.6);
 }
 
@@ -76,6 +78,7 @@ body {
 }
 
 /* animación version secundaria */
+/* animación botones navbar */
 @-webkit-keyframes menu-animacion {
   100% {
     border-radius: 15px;
@@ -90,6 +93,7 @@ body {
     padding: 6px;
   }
 }
+/* tamaño del botón hamburguesa */
 .navbar-toggler-icon {
   width: 85px;
   height: 80px;
